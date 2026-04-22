@@ -10,7 +10,8 @@ jobs:
               run: echo "This is step 1 of job 1"
             - name: Step 2
               run: echo "This is step 2 of job 1"
-            - run: |    
+            - name: Step 3
+              run: |    
                 echo "This is step 3.1 of job 1"
                 echo "This is step 3.2 of job 1"
 
