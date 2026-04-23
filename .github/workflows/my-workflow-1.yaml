@@ -1,12 +1,13 @@
 name: My Workflow 1
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
 
 jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
-            - name: Step 1
-              run: echo "This is step 1 of job 1"
+            - name: my sttep
+              run: echo "hello this is my workflow 1"
     
