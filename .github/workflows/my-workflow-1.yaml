@@ -1,8 +1,10 @@
 name: My Workflow 1
 on:
-  push:
-    branches:
-      - main
+  #push:
+  pull_request:
+  workflow_dispatch:
+  cron: '* * * * *' # Runs every day at midnight
+    
 
 jobs:
     job1:
