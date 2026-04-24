@@ -1,16 +1,22 @@
-name: My Workflow 1
+name: My Workflow 22
+run-name: Kamal's Workflow 22
 on:
-  #push:
-  pull_request:
-  workflow_dispatch:
-  schedule:
-   - cron: '*/5 * * * *'
-  
-
+    workflow_dispatch:
+env:
+    MY_NAME: Kamal
+    MY_JOB: Developer
 jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
-            - name: my sttep
-              run: echo "hello this is my workflow 1"
-    
+            - name: my step4
+              run: |
+                  echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
+                  echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
+     job22:
+        runs-on: ubuntu-latest
+        steps:
+            - name: my step4
+              run: |
+                  echo " ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
+                  echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
