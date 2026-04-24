@@ -4,15 +4,16 @@ on:
         branches:
             - main
             - dev
+        paths:
+            - 'src/**'
 
-             #  paths:
-     #       - 'src/**'
-
-        paths-ignore:
-            - 'README.md'
     
-            - .github/workflows/my-workflow-1.yaml
-            - .github/workflows/my-workflow-2.yaml
+
+      #  paths-ignore:
+      #      - 'README.md'
+    
+#            - .github/workflows/my-workflow-1.yaml
+ #           - .github/workflows/my-workflow-2.yaml
 jobs:
     job1:
         runs-on: ubuntu-latest
