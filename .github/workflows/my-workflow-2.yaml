@@ -10,4 +10,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: my step4
-              run: echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
+              run: |
+                  echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
+                  echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
+     job22:
+        runs-on: ubuntu-latest
+        steps:
+            - name: my step4
+              run: |
+                  echo " ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
+                  echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
