@@ -3,8 +3,9 @@ on:
   #push:
   pull_request:
   workflow_dispatch:
-  cron: '* * * * *' # Runs every day at midnight
-    
+  schedule:
+   - cron: '* * * * *'  # Runs every day at midnight
+  
 
 jobs:
     job1:
