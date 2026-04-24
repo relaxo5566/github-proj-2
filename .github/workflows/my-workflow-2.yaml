@@ -2,9 +2,12 @@ name: My Workflow 2
 run-name: Kamal's Workflow 2
 on:
     workflow_dispatch:
+env:
+    MY_NAME: Kamal
+    MY_JOB: Developer
 jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
-            - name: my sttep
-              run: echo "hello this is my workflow 2"
+            - name: my step
+              run: echo "hai i am ${env.MY_NAME} and i am a ${env.MY_JOB}"
