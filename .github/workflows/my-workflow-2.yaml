@@ -1,0 +1,11 @@
+name: My Workflow 2
+on:
+    push:
+        paths-ignore:
+            - 'README.md'
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: my sttep
+              run: echo "hello this is my workflow 2"
