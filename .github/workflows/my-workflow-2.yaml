@@ -1,8 +1,16 @@
 name: My Workflow 2
 on:
     push:
+        branches:
+            - main
+        paths:
+            - 'src/**'
+
         paths-ignore:
             - 'README.md'
+            - 'docs/**'
+            - .github/workflows/my-workflow-1.yaml
+            - .github/workflows/my-workflow-2.yaml
 jobs:
     job1:
         runs-on: ubuntu-latest
