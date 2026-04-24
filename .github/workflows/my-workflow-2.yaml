@@ -9,5 +9,11 @@ jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
-            - name: my step
+            - name: my step1
+              run: echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
+
+     job3:
+        runs-on: ubuntu-latest
+        steps:
+            - name: my step22
               run: echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
