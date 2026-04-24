@@ -10,4 +10,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: my step
-              run: echo "hai i am ${env.MY_NAME} and i am a ${env.MY_JOB}"
+              run: echo "hai i am ${{env.MY_NAME}} and i am a ${{env.MY_JOB}}"
